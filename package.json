@@ -5,7 +5,8 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.3"
+    "@types/node": "^25.9.3",
+    "wait-on": "^9.0.10"
   },
   "dependencies": {
     "express": "^5.2.1"
