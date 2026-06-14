@@ -1,9 +1,10 @@
-const { test, expect } = require('@playwright/test');
+const { test } = require('@applitools/eyes-playwright/fixture');
 
-test('homepage title', async ({ page }) => {
+test('homepage title', async ({ page, eyes }) => {
   await page.goto('http://localhost:3000');
 
-  await expect(
-    page.locator('#title')
-  ).toHaveText('Hello Playwright');
+  await eyes.check('homepage', {
+    fully: true,
+    matchLevel: 'Dynamic',
+  });
 });

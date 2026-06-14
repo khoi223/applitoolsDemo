@@ -4,6 +4,7 @@
     "test:e2e": "playwright test"
   },
   "devDependencies": {
+    "@applitools/eyes-playwright": "^1.47.7",
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.9.3",
     "wait-on": "^9.0.10"
